@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+
 import logo from '../../assets/Screenshot_1.png'
+import resume from '../../assets/My-resume.pdf'
 import { FaArrowDown } from "react-icons/fa";
 
 const Banner = () => {
@@ -14,12 +15,13 @@ const Banner = () => {
                     <p className='uppercase font-semibold text-[20px]'>i am a frond-end developer</p>
                     <p className='text-[15px] font-light mt-4'>I am a front-end React.js developer from Jhenaidah, Dhaka, Bangladesh. I try to understand the use and features of every website and aim to make a simple and user-friendly website. I am good at React.js and comfortable with Tailwind CSS. My mission is learning new web technologies and giving modern, user-friendly, bug-free websites to clients.</p>
 
-                    <Link>
-                        <button className="btn rounded-full hover:text-[#FF4301] text-white hover:bg-[#201F1B] bg-[#FF4301] mt-24 hover:border-[#FF4301]">
+                    
+                    <a href={resume} download="My-resume.pdf"><button className="btn rounded-full hover:text-[#FF4301] text-white hover:bg-[#201F1B] bg-[#FF4301] mt-24 hover:border-[#FF4301]">
                             Download Resume
                             <FaArrowDown></FaArrowDown>
-                        </button>
-                    </Link>
+                        </button></a>
+                        
+                   
                 </div>
             </div>
 

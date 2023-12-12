@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const links = <div className="text-[20px] flex gap-4"> 
         <Link to='/'><li className="px-6 py-4 rounded-full  hover:bg-[#FF4301]">Home</li></Link>
-        <Link to='/resume'><li className="px-6 py-4 rounded-full hover:bg-[#FF4301]">My Resume</li></Link>
         <Link to='/about'><li className="px-6 py-4 rounded-full hover:bg-[#FF4301]">About Me</li></Link>
         <Link to='/contact'><li className="px-6 py-4 rounded-full hover:bg-[#FF4301]">Contact Me</li></Link>
 
@@ -21,7 +20,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-[30px]">Md<p className="-mx-2 text-[#FF4301] text-[30px] font-extrabold">.</p>Hanif</a>
+                   <Link to='/'> <a className="btn btn-ghost text-[30px]">Md<p className="-mx-2 text-[#FF4301] text-[30px] font-extrabold">.</p>Hanif</a></Link>
                 </div>
                 
                 <div className=" hidden lg:flex">
